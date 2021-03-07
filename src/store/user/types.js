@@ -1,0 +1,3 @@
+export const USER_DETAILS = 'USER_DETAILS';
+export const LOGGING_IN_USER = 'LOGGING_IN_USER';
+export const USER_LOGIN_ERROR = 'USER_LOGIN_ERROR';
