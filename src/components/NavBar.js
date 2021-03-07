@@ -120,7 +120,7 @@ export default function NavBar(props) {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleLogout}>Manage Users</MenuItem>
+      {/* <MenuItem onClick={handleLogout}>Manage Users</MenuItem> */}
       <MenuItem onClick={handleManageUsers}>Logout</MenuItem>
     </Menu>
   );

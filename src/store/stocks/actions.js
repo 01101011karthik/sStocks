@@ -26,7 +26,7 @@ export function getStocks(source='USD', order='desc', pageNumber=1){
             dispatch({ 
                 type: STOCKS_LOADING_ERROR,
                 loading: false,
-                errorMessage: err.response.data.message,
+                errorMessage: err.response && err.response.data && err.response.data.message ? err.response.data.message : 'Something went wrong' ,
                 payload: {},
             })
         }

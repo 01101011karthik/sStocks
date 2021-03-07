@@ -27,7 +27,7 @@ export function logUser(type, payload){
             dispatch({
                 type: USER_LOGIN_ERROR,
                 loading: false,
-                errorMessage: err.response.data.message,
+                errorMessage: err.response && err.response.data && err.response.data.message ? err.response.data.message : 'Something went wrong' ,
                 payload: [],
             })
         }
