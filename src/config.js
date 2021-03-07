@@ -1,3 +1,3 @@
 module.exports = {
-    base_url: 'http://localhost:5000'
+    base_url: 'https://sstocks-server.herokuapp.com'
 }
